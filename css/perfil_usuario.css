@@ -1,0 +1,165 @@
+@import url('https://use.fontawesome.com/releases/v5.8.1/css/all.css');
+*
+{
+  box-sizing: border-box;
+}
+ul li a
+{
+  text-decoration: none;
+  color: black;
+}
+body
+{
+  background-image: url("../img/rectangular1.jpg");
+}
+.cabecera
+{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(80, 149, 102, 0.43);
+}
+.navbar-ppal ul
+{
+  display: flex;
+  flex-wrap: wrap;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.navbar-ppal ul li a
+{
+  margin: 18px 5px 0px 5px;
+  display: flex;
+  justify-content: center;
+}
+.navbar-ppal ul li img
+{
+  width: 50px;
+  height: 50px;
+}
+.fas
+{
+  margin-left: 5px;
+}
+.navbar-login ul {
+  display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.navbar-login ul li a
+{
+  display: flex;
+  align-content: center;
+}
+.navbar-login ul li i
+{
+  margin-top: 14px;
+  margin-right: 5px;
+}
+.carro
+{
+  font-size: 25px;
+  margin-right: 10px;
+}
+ul li a img
+{
+  width: 40px;
+  height: 40px;
+  margin-top: 7px;
+  border-radius: 50%;
+}
+h1
+{
+  text-align: center;
+}
+.contenedor
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+	align-items: center;
+}
+.imgPerfil
+{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+.formulario div
+{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.inputs
+{
+  height: 20px;
+  border-radius: 5px;
+  outline: none;
+}
+button
+{
+  border-radius: 5px;
+  height: 30px;
+}
+.buscador
+{
+  display: none;
+  border-radius: 0 0 0 0;
+}
+.mi-footer li
+{
+  display: inline-flex;
+  justify-content: center;
+  font-size: 20px;
+}
+.mi-footer li a
+{
+  padding: 0px;
+  margin: auto;
+  margin: 0px 7px;
+}
+@media (min-width:768px)
+{
+  .buscador
+  {
+    display: block;
+  }
+  .carro
+  {
+    font-size: 30px;
+    margin-right: 15px;
+  }
+  .navbar-ppal ul li a
+  {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+@media (min-width:1200px)
+{
+  .contenedor
+  {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .imgPerfil
+  {
+    width: 300px;
+    height: 300px;
+    margin: 50px;
+    border-radius: 50%;
+  }
+  .formulario
+  {
+    margin: 50px 70px;
+  }
+  .mi-footer li
+  {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
