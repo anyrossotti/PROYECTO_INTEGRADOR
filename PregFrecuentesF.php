@@ -15,9 +15,9 @@
 <header class="cabecera">
   <nav class="nav-login">
         <ul>
-          <li><a href="#">Inicio</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Registro</a></li>
+          <li><a href="index.php">Inicio</a></li>
+            <li><a href="Login.php">Login</a></li>
+            <li><a href="Registro.php">Registro</a></li>
 
         </ul>
       </nav>
@@ -28,22 +28,22 @@
     <div class="preguntas-container">
       <div class="preguntas">
         <h2><a href="#">Preguntas Frecuentes</a></h2>
-<div class="unaPregunta">
-        <h4><a href="#">¿Cómo hago para comprar on line?</a></h4>
-        <p>Para comprar en nuestra tienda online debes ingresar a la sección Tienda Online y, registrarte como usuario.
+        <div class="unaPregunta">
+          <h4><a href="#">¿Cómo hago para comprar on line?</a></h4>
+          <p>Para comprar en nuestra tienda online debes ingresar a la sección Tienda Online y, registrarte como usuario.
         Una vez dentro de la sección Tienda Online debes seguir los siguientes pasos: 
         - Seleccioná los productos que quieras comprar  
         - Hacé click en el botón COMPRAR. Se abrirá una ventana en la que se te ofrecerá seguir comprando o finalizar la compra.
         - Una vez que los productos deseados estén cargados en el Carrito de Compras debés seleccionar el botón CARRITO DE COMPRAS.
         - Para finalizar tu compra, seleccioná la forma de pago y completá tus datos.
         - Una vez finalizada la compra, recibirás un correo en tu email con la confirmación y los detalles de tu compra.</p>
-</div>
+        </div>
 
-<div class="unaPregunta">
-      <h4><a href="#">¿Necesito estar registrado para comprar en la Tienda Online?</a></h4>
-      <p>Si, es necesario estar registrado para comprar en la Tienda Online. Pero una vez que guardás tus datos se agilizará el proceso en tus próximas compras.</p>
-</div>
-<div class="unaPregunta">
+        <div class="unaPregunta">
+          <h4><a href="#">¿Necesito estar registrado para comprar en la Tienda Online?</a></h4>
+          <p>Si, es necesario estar registrado para comprar en la Tienda Online. Pero una vez que guardás tus datos se agilizará el proceso en tus próximas compras.</p>
+        </div>
+        <div class="unaPregunta">
       <h4>¿Cómo recupero mi contraseña?</a></h4>
       <p>En el apartado de “Accede a tu cuenta” en la web, existe la opción de “olvidé mi contraseña”. Clicando aquí se te pedirán las credenciales oportunas y se te enviará una nueva contraseña a tu mail y se te dará la opción de cambiarla por la que tú desees.</p>
 </div>
@@ -87,7 +87,7 @@
 <div class="iconos-sociales">
 <p><b>Seguinos en las redes!</b></p>
 <div class="redes-sociales">
-<a href="#">Facebook_    <i class="fab fa-facebook"></i></a>
+  <a href="#">Facebook_    <i class="fab fa-facebook"></i></a>
   <a href="#"> Instagram_  <i class="fab fa-instagram"></i></a>
 </div>
 </div>

@@ -4,20 +4,20 @@
     <meta charset="utf-8">
     <title>Login</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="css/login.css">
   </head>
   <body>
 
     <div class="contenedor">
       <!-- header -->
-      <img src="Logo-Lienis.png" alt="logo" class="logo">
+      <img src="img/Logo-Lienis.png" alt="logo" class="logo">
       <header class="cabecera-ppal">
 
 
         <ul class="navbar-ppal">
-          <li><a href="#">Inicio</a></li>
+          <li><a href="index.php">Inicio</a></li>
           <li><a href="#">Productos</a></li>
-          <li><a href="#">Preguntas Frecuentes</a></li>
+          <li><a href="PregFrecuentesF.php">Preguntas Frecuentes</a></li>
         </ul>
 
         <ul class="navbar-login">

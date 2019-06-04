@@ -14,14 +14,13 @@
 
 
 				<ul class="navbar-ppal">
-					<li><a href="#">Primero</a></li>
-					<li><a href="#">Segundo</a></li>
-					<li><a href="#">Tercero</a></li>
+					<li><a href="index.php">Inicio</a></li>
+					<li><a href="#">Productos</a></li>
+					<li><a href="PregFrecuentesF.php">Preguntas Frecuentes</a></li>
 				</ul>
 
 				<ul class="navbar-login">
-					<li><a href="Registro.html">Register</a></li>
-					<li><a href="Login.html">Login</a></li>
+					<li><a href="Login.php">Login</a></li>
 				</ul>
 			</header>
 

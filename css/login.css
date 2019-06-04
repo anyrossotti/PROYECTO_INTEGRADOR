@@ -1,6 +1,6 @@
 
 body {
-	background-image: url(rectangular4.jpg);
+	background-image: url(../img/rectangular1.jpg);
 	}
 
 ul {
@@ -63,6 +63,13 @@ ul {
 	text-decoration: none;
 	color: white;
 	text-transform: uppercase;
+}
+
+.navbar-ppal ul li a,
+.navbar-login ul li a
+{
+	background-color: rgb(200, 222, 113);
+	border: 1px solid RGB(0, 128, 0);
 }
 
 
@@ -144,11 +151,9 @@ h1{
 	  font-size: 30px;
 	  color:#5F04B4;
 	  padding: 20px;
-	  border: solid 3px yellow;
 	}
 
 	h4 {
-	    border:solid 5px orange;
 	    display:flex;
 	    justify-content: center;
 	    padding: 5px;

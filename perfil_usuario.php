@@ -14,7 +14,7 @@
           <li>
             <img src="img/Logo-Lienis.png" alt="Logo Lienis">
           </li>
-          <li><a href="#">Inicio</a></li>
+          <li><a href="index.php">Inicio</a></li>
           <li class="producto">
             <a href="#">Productos <!-- <i class="fas fa-sort-down"></i> -->
             </a>

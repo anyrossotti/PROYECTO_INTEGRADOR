@@ -1,6 +1,3 @@
-<?php
-require_once ("productos.php");
-?>
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -23,7 +20,7 @@ require_once ("productos.php");
 
       <nav class="nav-login">
             <ul>
-                <li><a href="#">Login</a></li>
+                <li><a href="Login.php">Login</a></li>
                 <li><a href="Registro.php">Registro</a></li>
             </ul>
           </nav>
@@ -36,11 +33,11 @@ require_once ("productos.php");
 
       <nav class="main-nav">
 				<ul>
-					<li><a href="#">Inicio</a></li>
-					<li><a href="#">Quiénes somos</a></li>
+					<li><a href="index.php">Inicio</a></li>
+					<li><a href="perfil_usuario.php">Perfil Usuario</a></li>
 					<li><select class="" name="accesorios" id="accesorios">
 
-<ul><option value="ani">Productos</option></ul>
+              <ul><option value="ani">Productos</option></ul>
                 <li><option value="ani">Anillos</option></li>
                 <li><option value="coll">Collares</option></li>
                 <li><option value="pul">Pulseras</option></li>
@@ -48,7 +45,7 @@ require_once ("productos.php");
                 <li><option value="mini">Minibags</option></li>
                 <li><option value="masc">Diseños Masculinos</option></li>
               </select>
-              				<li><a href="#">Preguntas Frecuentes</a></li>
+              				<li><a href="PregFrecuentesF.php">Preguntas Frecuentes</a></li>
 					</ul>
 			</nav>
 		</header>

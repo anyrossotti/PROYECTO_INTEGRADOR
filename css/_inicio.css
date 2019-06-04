@@ -13,7 +13,7 @@ max-width: 1200px;
 }
 
 body {
-      background-image: url("img/rectangular1.jpg");
+      background-image: url("../img/rectangular1.jpg");
       display: flex;
 }
 
@@ -57,7 +57,8 @@ display: inline-flex;
 
 .nav-login ul li a, .main-nav ul li a{
 color: RGB(0, 128, 0);
-display: flex;}
+display: flex;
+}
 
 .nav-login ul li{
   display: inline-flex;
