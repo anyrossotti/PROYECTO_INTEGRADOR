@@ -1,0 +1,103 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url("FotosProds/rectangular1.jpg");
+	}
+
+ul {
+	list-style: none; /* eliminar la viñeta */
+	margin: 0;
+	padding: 0;
+	}
+
+.contenedor {
+	width: 1140px;
+	margin: auto;
+	}
+
+.cabecera-ppal {
+background-color: rgb(200, 222, 113);
+border: 1px solid RGB(0, 128, 0);
+color: RGB(46, 139, 87);
+	padding: 25px;
+	display: flex;
+	justify-content: space-between;
+	}
+
+.logo {
+	width: 10%;
+	display: flex;
+	align-self: center;
+	margin: auto;
+	background-color: white;
+	border-radius: 90%;
+	margin-bottom: 30px;
+}
+
+.navbar-ppal {
+	display: flex;
+		  }
+
+.navbar-login {
+	display: flex;
+
+							  }
+
+.navbar-ppal li,
+.navbar-login li {
+	margin-left: 20px;
+	}
+	.navbar-login li{
+		display: flex;
+			}
+
+.navbar-ppal a,
+.navbar-login a {
+	text-decoration: none;
+	color: RGB(46, 139, 87);
+	text-transform: uppercase;
+}
+
+
+section{
+  margin: auto;
+  width: 350px;
+  }
+
+.formulario{
+  margin: 60px auto 60px;
+}
+
+h1{
+  font-size: 24px;
+  text-align: center;
+}
+
+input{
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.uno{
+  width: 100%;
+}
+
+label{
+  font-weight: bold;
+	color: RGB(46, 139, 87);
+}
+
+.pais, .genero{
+  font-size: 20px;
+}
+
+.registro{
+	background-color: rgb(0, 209, 255);
+	font-weight: bold;
+}
+
+.cancelar{
+	background-color: red;
+	color: white;
+	}

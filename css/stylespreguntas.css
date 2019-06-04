@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Open Sans', 'Montserrat', 'Noto Sans', 'Ubuntu', sans-serif;
+}
+
+.container{
+  margin:0 auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+}
+
+body {
+      background-image: url("FotosProds/rectangular1.jpg");
+      display: flex;
+      justify-content: center;
+}
+
+.cabecera {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+    }
+
+p {
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	}
+
+  a {
+     text-decoration: none;
+     align-items: center;
+ }
+
+.nav-login {
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  text-align: center;
+    font-size: 16px;
+    }
+
+.nav-login ul {
+  display: inline-flex;
+  }
+
+.nav-login ul li a, .main-nav ul li a{
+color: RGB(0, 128, 0);}
+
+.nav-login ul li{
+  padding: 5px;
+  justify-content: center;
+  background-color: rgb(200, 222, 113);
+  border: 1px solid RGB(0, 128, 0);
+  margin-right: 10px;
+  }
+
+  .preguntas {
+  margin: 10px auto 10px;
+    margin-top: 40px;
+    padding: 10px;
+      }
+
+  .preguntas h2 {
+    color: RGB(0, 128, 0);
+  }
+
+  .preguntas h4{
+  width: 95%;
+  align-items: center;
+  color: RGB(0, 100, 0)
+    }
+
+  .preguntas p{
+    font-size: 16px;
+    width: 95%;
+    margin-right: 10px;
+    color: RGB(34, 139, 34);
+        }
+
+  .preguntas a {
+    color: RGB(0, 100, 0);
+  }
+
+.main-footer {
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    }
+
+
+  .iconos-sociales {
+  width: 100%;
+  font-size: 20px;
+  color: RGB(0, 100, 0);
+  display: inline-flex;
+    align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+    }
+
+  .iconos-sociales p {
+    font-size: 22px;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    justify-content: flex-end;
+
+  }
+
+  .redes-sociales a{
+  color: RGB(0, 100, 0);
+  font-size: 16px;
+  width: 100%;
+  display: inline-flex;
+    align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  }
