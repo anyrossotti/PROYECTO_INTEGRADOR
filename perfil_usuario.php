@@ -11,10 +11,7 @@
     <header class = "cabecera">
       <nav class="navbar-ppal">
         <ul>
-          <li>
-            <img src="img/Logo-Lienis.png" alt="Logo Lienis">
-          </li>
-          <li><a href="index.php">Inicio</a></li>
+          <li><a href="inicio.php">Inicio</a></li>
           <li class="producto">
             <a href="#">Productos <!-- <i class="fas fa-sort-down"></i> -->
             </a>
@@ -42,7 +39,10 @@
       </nav>
     </header>
 
-    <h1>Bienvenida Maribel</h1>
+    <!-- Logo -->
+    <?php require_once "_logo.php" ?>
+
+    <h2>Bienvenida Maribel</h2>
 
     <div class="contenedor">
       <div class="item">
@@ -63,7 +63,7 @@
             <input class="inputs" type="date" name="" value="01/01/1900">
           </div>
           <div>
-            <label for="">País de nacimiento:</label>
+            <label for="paises">País de nacimiento:</label>
             <select class="inputs" name="pais">
               <option value="ar">Argentina</option>
               <option value="ur">Uruguay</option>
@@ -73,7 +73,7 @@
             </select>
           </div>
           <div>
-            <label for="">Género:</label>
+            <label for="genero">Género:</label>
             <select class="inputs" name="genero">
               <option value="fe">Femenino</option>
               <option value="ma">Masculino</option>
@@ -81,11 +81,11 @@
             </select>
           </div>
           <div>
-            <label for="">Email:</label>
+            <label for="email">Email:</label>
             <input class="inputs" type="email" name="" value="email@example.com">
           </div>
           <div>
-            <label for="">Cambiar contraseña:</label>
+            <label for="cambiarpass">Cambiar contraseña:</label>
             <input type="checkbox">
           </div>
           <div>
@@ -95,19 +95,7 @@
       </div>
     </div>
 
-    <footer class="mi-footer">
-      <ul>
-        <li>
-          <a class="social" href="#" target="_blank">
-            <i class="fab fa-facebook-square"></i>
-             lienisjpn
-          </a>
-          <a class="social" href="#" target="_blank">
-            <i class="fab fa-instagram"></i>
-             lienis.s.designs
-          </a>
-        </li>
-      </ul>
-    </footer>
+<?php require_once "_footer.php" ?>
+
   </body>
 </html>
