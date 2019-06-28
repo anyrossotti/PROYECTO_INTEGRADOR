@@ -33,30 +33,27 @@
       <section>
         <article class="formulario">
 <h1>Registrate!</h1>
+
+			<!-- agregar require once de datos registros -->
+
 <form action="Registro.html" method="post">
   <label for="nombre" type="nombre">Nombre</label>
   <br>
-<input class="uno" type="text" name="nombre" placeholder="Ingresá tu nombre" required>
-<label for="nombre" type="nombre">Apellido</label>
-
-<input class="uno" type="text" name="apellido" placeholder="Ingresá tu apellido" required>
+<input class="uno" type="text" name="nombre" placeholder="Ingresá tu nombre" required value="<?=$nombre?>">
+<label for="nombre" type="apellido">Apellido</label>
+<input class="uno" type="text" name="apellido" placeholder="Ingresá tu apellido" required value="<?=$apellido?>">
 <label for="fecha" type="fecha">Fecha de Nacimiento</label>
-<input class="uno" type="text" name="dia" placeholder="Día de Nacimiento" required>
-<input class="uno" type="text" name="mes" placeholder="Mes de Nacimiento" required>
-<input class="uno" type="text" name="año" placeholder="Año de Nacimiento" required>
+<input class="uno" type="date" name="fechanac"  required value="<?=$fechaNac?>">
 <label for="email" type="email">Email</label>
-
-<input class="uno" type="email" name="email" placeholder="Ingresá tu email" required>
+<input class="uno" type="email" name="email" placeholder="Ingresá tu email" required value="">
 <label for="pass" type="pass">Contraseña</label>
-
-<input class="uno" type="password" name="pass" placeholder="Password" required>
+<input class="uno" type="password" name="pass" placeholder="Password" required value="" pattern="[A-Za-z][A-Za-z0-9]*[0-9][A-Za-z0-9]*">
 <label for="pass" type="pass"> Repetir contraseña</label>
-
-<input class="uno" type="password" name="pass" placeholder="Password" required>
+<input class="uno" type="password" name="pass" placeholder="Password" required value="">
 <label for="pregunta" type="pregunta">Pregunta Secreta</label>
 
-<select name="pregunta" required>
-<option></option>
+<select name="pregunta">
+<option value="">Elegí una pregunta</option>
 <option value="pareja">¿Cuál es nombre de tu primer/a novio/a?</option>
 <option value="vehículo">¿Cuál era el modelo de tu primer vehículo?</option>
 <option value="mascota">¿Cuál era el nombre de tu primera mascota?</option>
@@ -64,11 +61,11 @@
 <option value="colegio">¿Cuál es el nombre de tu primer colegio?</option>
 </select>
 
-<input class="uno" type="text" name="pregunta" placeholder="Respuesta Secreta" required>
+<input class="uno" type="text" name="rtaSecreta" placeholder="Respuesta Secreta" required value="">
 <label class="pais" for="pais">País de Nacimiento</label>
 
 <select name="pais" required>
-<option></option>
+<option value="">Elegí un País</option>
 <option value="Ar">Argentina</option>
 <option value="Br">Brasil</option>
 <option value="Cl">Chile</option>
