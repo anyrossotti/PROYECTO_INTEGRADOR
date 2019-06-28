@@ -1,100 +1,130 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat|Noto+Sans|Open+Sans|Ubuntu&display=swap";
+
+* {
+  box-sizing: border-box;
+  font-family: 'Open Sans', 'Montserrat', 'Noto Sans', 'Ubuntu', sans-serif;
+}
 
 body {
-	background-image: url(../img/rectangular1.jpg);
-	}
+      background-image: url("../img/rectangular1.jpg");
+      display: flex;
+}
 
-ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	}
-
-	body{
-		max-width: 100%;
-	}
-
-.contenedor {
-	max-width: 80%;
-	margin: auto;
-	}
-
-.cabecera-ppal {
-	background-color: black;
-	padding: 25px;
-	display: flex;
-	justify-content: space-between;
-
-	}
-
-	.logo {
-			border-radius: 100%;
-			max-width: 10%;
-	  border: solid 1px rgb(114,153,64);
-	  display: flex;
-	  flex-direction: column;
-	  justify-content: center;
-	  margin: 15px auto 30px;
-	  padding: 10px;
-	  background-color: #FBEFF5;
-	}
-
-.navbar-ppal {
-	display: flex;
-		  }
-
-.navbar-login {
-	display: flex;
-	margin-right: 50px;
-
-							  }
-
-.navbar-ppal li,
-.navbar-login li {
-	margin-left: 20px;
-	border:solid 3px white;
-	padding: 5px;
-	}
-	.navbar-login li{
+	.contenedor {
+		border: 2px solid blue;
+		margin:0 auto;
 		display: flex;
-			}
+		max-width: 1200px;
+	}
 
-.navbar-ppal a,
-.navbar-login a {
-	text-decoration: none;
-	color: white;
-	text-transform: uppercase;
-}
+	p {
+	  font-size: 12px;
+	  margin-left: 10px;
+		 color: RGB(46, 139, 87);
+	}
 
-.navbar-ppal ul li a,
-.navbar-login ul li a
-{
-	background-color: rgb(200, 222, 113);
-	border: 1px solid RGB(0, 128, 0);
-}
-
-
-section{
-  margin: auto;
-  width: 350px;
-
+  a {
+    list-style: none;
+    text-decoration: none;
+    align-items: center;
+    color: RGB(0, 128, 0);
   }
 
-.formulario{
-  margin: 60px auto 60px;
+  ul li a {
+    text-decoration: none;
+    color: RGB(46, 139, 87);
+    font-weight: bold;
+  }
 
-}
+  ul {
+  	list-style: none;
+  	margin: 0;
+  	padding: 0;
+  	}
+
+	.slogan, .formulario {
+	   font-size: 15px;
+	 color: RGB(46, 139, 87);
+	}
+
+		.cabecera {
+		  width: 100%;
+		  display: inline-flex;
+		  justify-content: center;
+		  align-items: center;
+		  flex-direction:row;
+		  flex-wrap: wrap;
+		  margin-top: 15px;
+		  color: RGB(46, 139, 87);
+			background-color: rgba(234, 250, 241, 0.43);
+			border: 2px red solid;
+		        }
+
+	.nav-login {
+	display: inline-flex;
+	width: 100%;
+	justify-content: flex-end;
+	text-align: center;
+	font-size: 16px;
+	margin-top: 15px;
+	padding: 5px;
+					}
+
+	.nav-login ul li:hover{
+	color: RGB(233, 247, 239);
+	background-color: rgb(125, 206, 160);
+	text-decoration: none;
+					}
+
+	.nav-login ul {
+	display: inline-flex;
+		}
+
+	.nav-login ul li a, .main-nav ul li a{
+	font-size:14px;
+	}
+
+	.nav-login ul li{
+	padding: 5px;
+	justify-content: center;
+		margin-right: 10px;
+	border-radius: 10%;
+		 }
+
+	.main-nav ul li {
+	width: 100%;
+	display: inline-flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	text-align: center;
+		}
+
+		.main-nav ul li a:hover{
+	background-color: rgb(125, 206, 160);
+	text-decoration: none;
+  color: RGB(233, 247, 239);
+			}
+
+.formulario{
+  margin: 20px auto 20px;
+	border: 2px orange solid;
+ }
+
 h1{
   font-size: 24px;
   text-align: center;
   margin-right: 100px;
+	color: RGB(46, 139, 87);
 }
 
 input{
   margin-top: 5px;
   margin-bottom: 20px;
 }
+
 .uno{
-  width: 100%;
+  width: 70%;
 }
 
 label{
@@ -114,46 +144,34 @@ label{
 	background-color: red;
 	color: white;
 	}
-  section{
-  width: 350px;
-  }
 
-
-  section  {
-    margin: auto;
-    margin-top: 40px;
-    }
-
-.email, .pass{
-  width: 100%;
+	.email, .pass{
+  width: 70%;
 }
-
 
   .Recordarme{
     margin-left: 250px;
-
 }
 
 p{
   color: red;
 }
+
 h1{
   margin-left: 120px;
   }
 
 	.Boton{
-		background-color: rgb(0, 209, 255);
+		background-color: RGB(46, 139, 87);
 		font-weight: bold;
-	}
-	.my-footer li {
-	  display: inline-flex;
-	  justify-content: center;
-	  font-size: 30px;
-	  color:#5F04B4;
-	  padding: 20px;
+		padding: 7px;
+			margin-top: 10px;
+	margin-bottom: 20px;
+	color: white;
 	}
 
 	h4 {
+	    border:solid 5px orange;
 	    display:flex;
 	    justify-content: center;
 	    padding: 5px;
@@ -162,8 +180,73 @@ h1{
 	    font-size: 30px;
 }
 
+.logo {
+  border-radius: 100%;
+  display: flex;
+  margin: 10px auto 10px;
+  padding: 10px;
+  background-color: rgba(234, 250, 241, 0.43);
+  width:200px;
+  height:200px;
+  justify-content: center;
+  margin: 20px auto 20px;
+}
 
+.main-footer {
+display: flex;
+width: 100%;
+justify-content: flex-end;
+font-size: 14px;
+margin-top: 30px;
+margin-bottom: 40px;
+				}
 
+.iconos-sociales {
+	border: 2px green solid;
+width: 100%;
+font-size: 20px;
+color: RGB(46, 139, 87);
+display: flex;
+align-items: center;
+margin-right: 15px;
+padding: 5px;
+background-color: rgba(234, 250, 241, 0.43);
+			}
+
+.iconos-sociales p {
+	font-size: 22px;
+	display: flex;
+	width: 100%;
+	justify-content: flex-end;
+}
+
+	.redes-sociales a, .redes{
+	color: RGB(46, 139, 87);
+	font-size: 25px;
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-between;
+	margin-left: 15px;
+	flex-direction: row;
+				}
+
+	.iconos-sociales a i:hover{
+	color: RGB(233, 247, 239);
+	background-color: rgb(125, 206, 160);
+	border-radius: 20%;
+	font-size: 30px;
+	}
+
+  .slogan {
+  display: flex;
+    justify-content: center;
+    font-size: 10px;
+    width: 100%;
+ 	}
+
+.containerLogo {
+	border: 2px solid violet;
+}
 
 	@media (min-width: 768px) {
 		.contenedor {

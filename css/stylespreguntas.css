@@ -1,14 +1,8 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat|Noto+Sans|Open+Sans|Ubuntu&display=swap";
+
 * {
   box-sizing: border-box;
   font-family: 'Open Sans', 'Montserrat', 'Noto Sans', 'Ubuntu', sans-serif;
-}
-
-.container{
-  margin:0 auto;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  max-width: 1200px;
 }
 
 body {
@@ -17,16 +11,32 @@ body {
       justify-content: center;
 }
 
+.container{
+  margin:0 auto;
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+}
+
 .cabecera {
   width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
+    color: RGB(46, 139, 87);
     }
 
-p {
-  font-size: 12px;
-  margin-left: 10px;
+a {
+  list-style: none;
+  text-decoration: none;
+  align-items: center;
+  color: RGB(0, 128, 0);
+}
+
+ul li a {
+  text-decoration: none;
+  color: RGB(46, 139, 87);
+  font-weight: bold;
 }
 
 ul {
@@ -35,104 +45,137 @@ ul {
 	padding: 0;
 	}
 
-  a {
-     text-decoration: none;
-     align-items: center;
+  h1, .cabecera {
+     font-size: 15px;
+   color: RGB(46, 139, 87);
  }
 
-.nav-login {
+   .volver-inicio {
+     display: inline-flex;
+     justify-content: flex-start;
+     align-self: flex-start;
+     align-items: flex-start;
+   }
+
+  .nav-login {
   display: inline-flex;
   width: 100%;
-  align-items: center;
-  flex-direction: row;
-  justify-content: flex-end;
-  flex-wrap: nowrap;
-  text-align: center;
+    justify-content: flex-end;
+    text-align: center;
     font-size: 16px;
-    }
+    margin-top: 30px;
+    background-color: rgba(234, 250, 241, 0.43);
+    padding: 5px;
+        }
+
+.nav-login ul li:hover{
+  color: RGB(233, 247, 239);
+  background-color: rgb(125, 206, 160);
+          }
 
 .nav-login ul {
   display: inline-flex;
-  }
+    }
 
 .nav-login ul li a, .main-nav ul li a{
-color: RGB(0, 128, 0);}
+  color: RGB(46, 139, 87);
+}
 
 .nav-login ul li{
   padding: 5px;
   justify-content: center;
-  background-color: rgb(200, 222, 113);
-  border: 1px solid RGB(0, 128, 0);
+  background-color: rgba(234, 250, 241, 0.43);
   margin-right: 10px;
-  }
-
-  .preguntas {
-  margin: 10px auto 10px;
-    margin-top: 40px;
-    padding: 10px;
-      }
-
-  .preguntas h2 {
-    color: RGB(0, 128, 0);
-  }
-
-  .preguntas h4{
-  width: 95%;
-  align-items: center;
-  color: RGB(0, 100, 0)
+  border-radius: 10%;
     }
 
-  .preguntas p{
-    font-size: 16px;
-    width: 95%;
-    margin-right: 10px;
-    color: RGB(34, 139, 34);
-        }
-
-  .preguntas a {
-    color: RGB(0, 100, 0);
+.panel-group {
+  display: flex;
+  width: 100%;
+  color: RGB(46, 139, 87);
+  flex-direction: column;
+  justify-content:space-around;
+  flex-wrap: nowrap;
   }
+
+  .panel-title, .panel-heading, .panel-body, .panel-collapse collapse  {
+  font-size: 14px;
+  display: flex;
+  text-decoration: none;
+  color: RGB(46, 139, 87);
+  width: 100%;
+          }
+
+  .panel-title a:hover{
+  background-color: RGB(233, 247, 239);
+  padding: 5px;
+  border-radius: 10%;
+  }
+
+.unaPregunta {
+font-size: 14px;
+text-decoration: none;
+color: RGB(46, 139, 87);
+}
 
 .main-footer {
-  display: inline-flex;
+display: flex;
+width: 100%;
+justify-content: flex-end;
+font-size: 14px;
+margin-top: 30px;
+margin-bottom: 40px;
+        }
+
+.iconos-sociales {
+width: 100%;
+font-size: 20px;
+color: RGB(46, 139, 87);
+display: flex;
+align-items: center;
+margin-right: 15px;
+padding: 5px;
+background-color: rgba(234, 250, 241, 0.43);
+      }
+
+.iconos-sociales p {
+  font-size: 22px;
+  display: flex;
   width: 100%;
-  align-items: center;
-  flex-direction: row;
   justify-content: flex-end;
-  flex-wrap: nowrap;
-    font-size: 14px;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    }
-
-
-  .iconos-sociales {
-  width: 100%;
-  font-size: 20px;
-  color: RGB(0, 100, 0);
-  display: inline-flex;
-    align-items: center;
-  flex-direction: row;
-  justify-content: flex-end;
-  flex-wrap: nowrap;
-    }
-
-  .iconos-sociales p {
-    font-size: 22px;
-    display: flex;
-    align-items: flex-end;
-    width: 100%;
-    justify-content: flex-end;
-
-  }
+}
 
   .redes-sociales a{
-  color: RGB(0, 100, 0);
-  font-size: 16px;
+  color: RGB(46, 139, 87);
+  font-size: 25px;
   width: 100%;
   display: inline-flex;
-    align-items: center;
+  justify-content: space-between;
+  margin-left: 15px;
   flex-direction: row;
-  justify-content: center;
-  flex-wrap: nowrap;
+        }
+
+  .iconos-sociales a i:hover{
+  color: RGB(233, 247, 239);
+  background-color: rgb(125, 206, 160);
+  border-radius: 20%;
+  font-size: 30px;
+  }
+
+  .logo {
+    border-radius: 100%;
+    display: flex;
+    margin: 10px auto 10px;
+    padding: 10px;
+    background-color: rgba(234, 250, 241, 0.43);
+    width:200px;
+    height:200px;
+    justify-content: center;
+    margin: 20px auto 20px;
+  }
+
+  .slogan {
+  display: flex;
+    justify-content: center;
+    font-size: 10px;
   }
