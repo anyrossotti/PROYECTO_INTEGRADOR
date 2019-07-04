@@ -1,56 +1,54 @@
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/inicio.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Noto+Sans|Open+Sans|Ubuntu&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/inicio.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Noto+Sans|Open+Sans|Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Inicio</title>
-  </head>
-  <body>
-
-    <div class="container">
-      <div class="row">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inicio</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
       <!-- cabecera -->
-    <header class="cabecera">
+      <header class="cabecera">
+        <nav class="nav-login">
+          <ul>
+            <li><a href="Registro.php"><b>Registro</b></a></li>
+            <li><a href="Login.php"><b>Login</b></a></li>
+          </ul>
+        </nav>
+      <div class="main-nav">
+        <nav class="main-navv">
+          <ul>
+            <div class="dropdown">
+              <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                <b>Productos</b>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#"><option value="ani">Anillos</a></option></li>
+                <li><a href="#"><option value="coll">Collares</a></option></li>
+                <li><a href="#"><option value="pul">Pulseras</a></option></li>
+                <li><a href="#"><option value="zar">Zarcillos</a></option></li>
+                <li><a href="#"><option value="mini">Minibags</a></option></li>
+                <li><a href="#"><option value="masc">Para Ellos</a></option></li>
+              </ul>
+            </div>
+            <li><a href="PregFrecuentesF.php"><b>Faq</b></a></li>
+          </ul>
+        </nav>
+      </div>
 
-      <nav class="nav-login">
-            <ul>
-                <li><a href="Registro.php"><b>Registro</b></a></li>
-                <li><a href="Login.php"><b>Login</b></a></li>
-            </ul>
-          </nav>
+      <!-- Logo -->
+      <?php require_once "_logo.php" ?>
 
-<div class="main-nav">
-<nav class="main-navv">
-  <ul>
-    <li><a href="perfil_usuario.php"><b>Perfil Usuario</b></a></li>
-    <div class="dropdown"> <button class="btn dropdown-toggle" type="button" data-toggle="dropdown"><b>Productos</b>
-    </button>
-    <ul class="dropdown-menu">
-      <li><a href="#"><option value="ani">Anillos</a></option></li>
-      <li><a href="#"><option value="coll">Collares</a></option></li>
-      <li><a href="#"><option value="pul">Pulseras</a></option></li>
-      <li><a href="#"><option value="zar">Zarcillos</a></option></li>
-      <li><a href="#"><option value="mini">Minibags</a></option></li>
-      <li><a href="#"><option value="masc">Para Ellos</a></option></li>
-    </ul>
-  </div>
-     <li><a href="PregFrecuentesF.php"><b>Faq</b></a></li>
-    </ul>
-</nav></div>
-
-<!-- Logo -->
-<?php require_once "_logo.php" ?>
-
-</header>
+    </header>
 
 <!-- carousel -->
 
