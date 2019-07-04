@@ -11,39 +11,12 @@ body {
 }
 
 	.contenedor {
-		border: 2px solid blue;
 		margin:0 auto;
 		display: flex;
 		max-width: 1200px;
 	}
 
-	p {
-	  font-size: 12px;
-	  margin-left: 10px;
-		 color: RGB(46, 139, 87);
-	}
-
-  a {
-    list-style: none;
-    text-decoration: none;
-    align-items: center;
-    color: RGB(0, 128, 0);
-  }
-
-  ul li a {
-    text-decoration: none;
-    color: RGB(46, 139, 87);
-    font-weight: bold;
-  }
-
-  ul {
-  	list-style: none;
-  	margin: 0;
-  	padding: 0;
-  	}
-
-	.slogan, .formulario {
-	   font-size: 15px;
+	.formulario {
 	 color: RGB(46, 139, 87);
 	}
 
@@ -57,7 +30,7 @@ body {
 		  margin-top: 15px;
 		  color: RGB(46, 139, 87);
 			background-color: rgba(234, 250, 241, 0.43);
-			border: 2px red solid;
+
 		        }
 
 	.nav-login {
@@ -65,9 +38,8 @@ body {
 	width: 100%;
 	justify-content: flex-end;
 	text-align: center;
-	font-size: 16px;
 	margin-top: 15px;
-	padding: 5px;
+	padding: 25px;
 					}
 
 	.nav-login ul li:hover{
@@ -85,9 +57,8 @@ body {
 	}
 
 	.nav-login ul li{
-	padding: 5px;
 	justify-content: center;
-		margin-right: 10px;
+	margin-right: 10px;
 	border-radius: 10%;
 		 }
 
@@ -106,10 +77,13 @@ body {
   color: RGB(233, 247, 239);
 			}
 
-.formulario{
-  margin: 20px auto 20px;
-	border: 2px orange solid;
- }
+.formulario, .mail, .pass {
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  text-align: center;
+  margin-left: 40px;
+   }
 
 h1{
   font-size: 24px;
@@ -145,27 +119,15 @@ label{
 	color: white;
 	}
 
-	.email, .pass{
-  width: 70%;
+.Recordarme{
+    align-items: center;
 }
 
-  .Recordarme{
-    margin-left: 250px;
-}
-
-p{
-  color: red;
-}
-
-h1{
-  margin-left: 120px;
-  }
-
-	.Boton{
-		background-color: RGB(46, 139, 87);
-		font-weight: bold;
-		padding: 7px;
-			margin-top: 10px;
+.Boton{
+	background-color: RGB(46, 139, 87);
+	font-weight: bold;
+	padding: 7px;
+	margin-top: 10px;
 	margin-bottom: 20px;
 	color: white;
 	}
@@ -178,74 +140,6 @@ h1{
 	    margin: 0 auto;
 	    color: #db0080;
 	    font-size: 30px;
-}
-
-.logo {
-  border-radius: 100%;
-  display: flex;
-  margin: 10px auto 10px;
-  padding: 10px;
-  background-color: rgba(234, 250, 241, 0.43);
-  width:200px;
-  height:200px;
-  justify-content: center;
-  margin: 20px auto 20px;
-}
-
-.main-footer {
-display: flex;
-width: 100%;
-justify-content: flex-end;
-font-size: 14px;
-margin-top: 30px;
-margin-bottom: 40px;
-				}
-
-.iconos-sociales {
-	border: 2px green solid;
-width: 100%;
-font-size: 20px;
-color: RGB(46, 139, 87);
-display: flex;
-align-items: center;
-margin-right: 15px;
-padding: 5px;
-background-color: rgba(234, 250, 241, 0.43);
-			}
-
-.iconos-sociales p {
-	font-size: 22px;
-	display: flex;
-	width: 100%;
-	justify-content: flex-end;
-}
-
-	.redes-sociales a, .redes{
-	color: RGB(46, 139, 87);
-	font-size: 25px;
-	width: 100%;
-	display: inline-flex;
-	justify-content: space-between;
-	margin-left: 15px;
-	flex-direction: row;
-				}
-
-	.iconos-sociales a i:hover{
-	color: RGB(233, 247, 239);
-	background-color: rgb(125, 206, 160);
-	border-radius: 20%;
-	font-size: 30px;
-	}
-
-  .slogan {
-  display: flex;
-    justify-content: center;
-    font-size: 10px;
-    width: 100%;
- 	}
-
-.containerLogo {
-	border: 2px solid violet;
 }
 
 	@media (min-width: 768px) {

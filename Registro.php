@@ -53,7 +53,7 @@ if($_POST){
       <header class="cabecera">
         <nav class="nav-login">
         	<ul>
-            <li><a href="Login.php"><b>Login</b></a></li>
+            <li><a href="login.php"><b>Login</b></a></li>
           </ul>
         </nav>
 
@@ -62,7 +62,7 @@ if($_POST){
       			<ul>
 				      <li><a href="inicio.php"><b>Inicio</b></a></li>
 				      <li><a href=""><b>Productos</b></a></li>
-				      <li><a href="pregFrecuentes.php"><b>Preguntas Frecuentes</b></a></li>
+				      <li><a href="PregFrecuentesF.php"><b>Preguntas Frecuentes</b></a></li>
             </ul>
       		</nav>
 				</div>

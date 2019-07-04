@@ -11,25 +11,6 @@ body {
   flex-direction: column;
 }
 
-a {
-  list-style: none;
-  text-decoration: none;
-  align-items: center;
-  color: RGB(0, 128, 0);
-}
-
-ul li a {
-  text-decoration: none;
-  color: RGB(46, 139, 87);
-  font-weight: bold;
-}
-
-ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
 label {
   color: RGB(46, 139, 87);
   font-weight: bold;
@@ -40,7 +21,6 @@ label {
   justify-content: space-between;
   background-color: rgba(234, 250, 241, 0.43);
 }
-
 
 .navbar-ppal ul {
   display: flex;
@@ -97,10 +77,6 @@ h1, h2 {
   color: RGB(46, 139, 87);
 }
 
-h1{
-   font-size: 25px;
- }
-
 .contenedor {
   display: flex;
   flex-direction: column;
@@ -117,6 +93,7 @@ h1{
 .formulario div {
   margin-top: 15px;
   margin-bottom: 15px;
+  font-size: 20px;
 }
 
 .inputs {
@@ -125,15 +102,14 @@ h1{
   outline: none;
 }
 
-button {
-  border-radius: 5px;
-  height: 30px;
+.button {
   background-color: RGB(46, 139, 87);
-  font-weight: bold;
-  padding: 7px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  color: white;
+	font-weight: bold;
+	padding: 7px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	color: white;
+  font-size: 14px;
 }
 
 .buscador {
@@ -159,6 +135,7 @@ button {
 
 .slogan {
   display: none;
+  font-size: 15px;
 }
 
 @media (min-width: 768px)

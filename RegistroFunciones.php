@@ -6,7 +6,6 @@ if ( isset($_COOKIE['email']) ) {
 	$_SESSION['userLogged'] = $usuario;
 }
 	function validarRegistro() {
-
 		$errores = [];
 
 		$nombre = trim($_POST['nombre']);
@@ -17,7 +16,6 @@ if ( isset($_COOKIE['email']) ) {
 		$rePassword = trim($_POST['rePass']);
 		$paises = $_POST['pais'];
 		$avatar = $_FILES['avatar'];
-
 
 		if ( empty($nombre) ) {
 			$errores['nombre'] = 'El campo nombre no puede estar vacío';
@@ -30,15 +28,14 @@ if ( isset($_COOKIE['email']) ) {
 		if ( empty($fecha) ) {
 			$errores['fecha'] = 'Debes ingresar una fecha de nacimiento';
 		}
-
 		if (empty($email)) {
 			$errores['email'] = 'El campo correo electrónico es obligatorio';
 		} elseif ( !filter_var($email, FILTER_VALIDATE_EMAIL) ) {
-			$errors['email'] = 'Escribí un formato de correo válido';
+			echo "aasd";
+			$errores['email'] = 'Escribí un formato de correo válido';
 		} elseif ( emailExist($email) ) {
 			$errores['email'] = 'Ese email ya esta registrado';
 		}
-
 
 		if (empty($password)) {
 			$errores['pass'] = 'La contraseña no puede estar vacía';
@@ -55,7 +52,6 @@ if ( isset($_COOKIE['email']) ) {
 		} elseif ( $password != $rePassword ) {
 			$errores['rePass'] = 'Las contraseñas no coinciden';
 		}
-
 					if (empty($paises)) {
 				$errores['pais'] = 'Elegí un país de nacimiento';
 			}
@@ -69,12 +65,13 @@ if ( isset($_COOKIE['email']) ) {
 				$errores['avatar'] = 'Las extensiones permitidas son JPG, PNG, GIF y JPEG';
 			}
 		}
-
-
 		return $errores;
-	}
-	function guardarUsuario() {
 
+}
+
+
+
+	function guardarUsuario() {
 		$listaDeUsuarios = getAllUsers();
 		unset($_POST['rePass']);
 		$_POST['pass'] = password_hash($_POST['pass'], PASSWORD_DEFAULT);
@@ -111,20 +108,17 @@ if ( isset($_COOKIE['email']) ) {
 		$nombreImg = $archivo['name'];
 		$ext = pathinfo($nombreImg, PATHINFO_EXTENSION);
 		$final = 'avatars/' . uniqid('img-') . "." . $ext;
-
 		$tempFile = $archivo['tmp_name'];
-	move_uploaded_file($tempFile, $final);
+		move_uploaded_file($tempFile, $final);
 		return $final;
 	}
 
+
 	function ValidarLogin() {
 		$errores = [];
-
 		$email = trim($_POST['email']);
 		$password = trim($_POST['pass']);
-
 		if (empty($email)) {
-
 			$errores['email'] = 'El campo correo electrónico es obligatorio';
 		} elseif ( !filter_var($email, FILTER_VALIDATE_EMAIL) ) {
 			$errores['email'] = 'Escribí un formato de correo válido';
@@ -136,7 +130,6 @@ if ( isset($_COOKIE['email']) ) {
 				$errores['pass'] = 'La contraseña no es correcta';
 			}
 		}
-
 		if ( empty($password) ) {
 			$errores['pass'] = 'La contraseña no puede estar vacía';
 		}
@@ -157,7 +150,6 @@ if ( isset($_COOKIE['email']) ) {
 	function login($usuarioALoguear) {
 		unset($usuarioALoguear['pass']);
 		$_SESSION['userLogged'] = $usuarioALoguear;
-
 		header('location: perfil_usuario.php');
 		exit;
 	}

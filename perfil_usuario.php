@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/perfil_usuario.css">
+        <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Noto+Sans|Open+Sans|Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
@@ -56,7 +57,10 @@
       </nav>
     </header>
 
-    <h2>Bienvenido <?= $usuario['nombre']; ?></h2>
+<div class="welcome" style="color: RGB(46, 139, 87);">
+  <h2>Bienvenido <?= $usuario['nombre']; ?></h2>
+</div>
+
     <div class="contenedor">
       <div class="item">
         <img class="imgPerfil" src="<?= $usuario['imagenFinal']; ?>" alt="imagen usuario">
@@ -64,41 +68,22 @@
       <div class="item">
         <form class="formulario">
           <div>
-            <label for="">Nombre completo:</label>
-            <input class="inputs" type="text" name="nombre"
-            value="<?= $usuario['nombre']; ?>">
-          </div>
+            <label for="">Nombre completo:  <?= $usuario['nombre']; ?></label>
+
+            </div>
           <div>
-            <label for="">Nombre de Usuario:</label>
-            <input class="inputs" type="text" name="usuario"
-            value="<?= $usuario['usuario']; ?>">
-          </div>
+            <label for="">Nombre de Usuario: <?= $usuario['usuario']; ?></label>
+        </div>
           <div>
-            <label for="">Fecha de nacimiento:</label>
-            <input class="inputs" type="date" name=""
-            value="<?= $usuario['fecha']; ?>">
-          </div>
-          <div>
-            <label for="paises">País de nacimiento:</label>
-            <select class="inputs" name="pais">
-              <option value="ar">Argentina</option>
-              <option value="ur">Uruguay</option>
-              <option value="ch">Chile</option>
-              <option value="br">Brasil</option>
-              <option value="bo">Bolivia</option>
-            </select>
-          </div>
-          <div>
-            <label for="email">Email:</label>
-            <input class="inputs" type="email" name="email"
-             value="<?= $usuario['email']; ?>">
+            <label for="email">Email: <?= $usuario['email']; ?></label>
+
           </div>
           <div>
             <label for="cambiarpass">Cambiar contraseña:</label>
             <input type="checkbox">
           </div>
-          <div>
-            <button type="button" name="button">Editar Información</button>
+          <div class="butt">
+            <button class="button" type="submit" name="button">Editar Información</button>
           </div>
         </form>
       </div>
