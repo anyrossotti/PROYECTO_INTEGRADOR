@@ -3,31 +3,13 @@
 * {
 	box-sizing: border-box;
 	  font-family: 'Open Sans', 'Montserrat', 'Noto Sans', 'Ubuntu', sans-serif;
+		  font-size: 14px;
 }
 
 body {
       background-image: url("../img/rectangular1.jpg");
       display: flex;
 }
-
-a {
-  list-style: none;
-  text-decoration: none;
-  align-items: center;
-  color: RGB(0, 128, 0);
-}
-
-ul li a {
-  text-decoration: none;
-  color: RGB(46, 139, 87);
-  font-weight: bold;
-}
-
-ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	}
 
 	.containerLogo {
 		width: 100%;
@@ -38,70 +20,45 @@ ul {
 	margin: auto;
 	}
 
-	.cabecera-ppal {
-	background-color: rgba(234, 250, 241, 0.43);
-	display: inline-flex;
-	width: 100%;
-	justify-content: flex-end;
-	text-align: center;
-	font-size: 16px;
-	margin-top: 15px;
-	padding: 5px;
-	 color: RGB(46, 139, 87);
-				}
+	.nav-login {
+ display: inline-flex;
+ width: 100%;
+ justify-content: flex-end;
+ text-align: center;
+ margin-top: 12px;
+ padding: 5px;
+ background-color: rgba(234, 250, 241, 0.43);
+        }
 
-	.cabecera-ppal ul li:hover{
-	color: RGB(233, 247, 239);
-	background-color: rgb(125, 206, 160);
-	text-decoration: none;
-			}
+ .nav-login ul li:hover{
+  color: RGB(233, 247, 239);
+  background-color: rgb(125, 206, 160);
+  text-decoration: none;
+          }
 
-	.cabecera-ppal ul {
-	display: inline-flex;
-		}
+ .nav-login ul, .main-nav ul {
+  display: flex;
+    }
 
-	.cabecera-ppal ul li a{
-	color: RGB(46, 139, 87);
-	}
+ .nav-login ul li, .main-nav ul li{
+ padding: 5px;
+ justify-content: center;
+ margin-right: 10px;
+   }
 
-	.cabecera-ppal ul li{
-	padding: 5px;
-	justify-content: center;
-	margin-right: 10px;
-	border-radius: 10%;
-		}
+ .main-nav {
+ width: 100%;
+ display: flex;
+ justify-content: space-around;
+  text-align: center;
+ background-color: rgba(234, 250, 241, 0.43);
+ }
 
-			h1 {
-		   font-size: 15px;
-		 color: RGB(46, 139, 87);}
-
-.navbar-ppal {
-	display: inline-flex;
-	width: 100%;
-	font-size: 16px;
-	padding: 5px;
-	align-content: flex-start;
-	align-items:flex-start;
-	align-self:flex-start;
-		  }
-
-.navbar-login {
-	display: flex;
-	align-content: flex-end;
-								  }
-
-.navbar-ppal li,
-.navbar-login li {
-	margin-left: 20px;
-	font-weight: bold;
-	display: flex;
-	}
-
-	.navbar-ppal a,
-.navbar-login a {
-	text-decoration: none;
-	color: RGB(46, 139, 87);
-	}
+ .main-nav ul li:hover{
+  background-color: rgb(125, 206, 160);
+  text-decoration: none;
+  list-style: none;
+      }
 
 section{
   margin: auto;
@@ -113,11 +70,6 @@ section{
 	color: RGB(46, 139, 87);
 }
 
-h1{
-  font-size: 30px;
-  text-align: center;
-}
-
 input{
   margin-top: 5px;
   margin-bottom: 20px;
@@ -126,6 +78,7 @@ input{
 
 .uno{
   width: 100%;
+	margin: 10px auto 15px;
 }
 
 label{
@@ -135,8 +88,8 @@ label{
 		font-size: 20px
 }
 
-.pais, .genero{
-  font-size: 20px;
+.paises {
+  font-size: 25px;
 	margin-top: 15px;
 	padding: 10px;
 }
@@ -145,9 +98,9 @@ label{
 	background-color: RGB(46, 139, 87);
 	font-weight: bold;
 	padding: 7px;
-		margin-top: 10px;
-margin-bottom: 20px;
-color: white;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	color: white;
 }
 
 .cancelar{
@@ -158,67 +111,16 @@ color: white;
 	margin-top: 10px;
 	}
 
+.slogan {
+ display: flex;
+ justify-content: center;
+ font-size: 12px;
+ color: RGB(46, 139, 87);
+ width: 100%;
+}
 
-	.main-footer {
+h2 {
+	margin: 30px auto 50px;
+	font-size: 30px;
 	display: flex;
-	width: 100%;
-	justify-content: flex-end;
-	font-size: 14px;
-	margin-top: 30px;
-	margin-bottom: 40px;
-	        }
-
-	.iconos-sociales {
-	width: 100%;
-	font-size: 20px;
-	color: RGB(46, 139, 87);
-	display: flex;
-	align-items: center;
-	margin-right: 15px;
-	padding: 5px;
-	background-color: rgba(234, 250, 241, 0.43);
-	      }
-
-	.iconos-sociales p {
-	  font-size: 22px;
-	  display: flex;
-	  width: 100%;
-	  justify-content: flex-end;
-	}
-
-	  .redes-sociales a{
-	  color: RGB(46, 139, 87);
-	  font-size: 25px;
-	  width: 100%;
-	  display: inline-flex;
-	  justify-content: space-between;
-	  margin-left: 15px;
-	  flex-direction: row;
-	        }
-
-	  .iconos-sociales a i:hover{
-	  color: RGB(233, 247, 239);
-	  background-color: rgb(125, 206, 160);
-	  border-radius: 20%;
-	  font-size: 30px;
-	  }
-
-	  .logo {
-	    border-radius: 100%;
-	    display: flex;
-	    margin: 10px auto 10px;
-	    padding: 10px;
-	    background-color: rgba(234, 250, 241, 0.43);
-	    width:200px;
-	    height:200px;
-	    justify-content: center;
-	    margin: 20px auto 20px;
-	  }
-
-		.slogan {
-		display: flex;
-			justify-content: center;
-			font-size: 10px;
-			color: RGB(46, 139, 87);
-			width: 100%;
-		}
+align-items: center;}
