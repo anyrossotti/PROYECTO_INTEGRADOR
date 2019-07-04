@@ -1,9 +1,11 @@
-"# PROYECTO_INTEGRADOR" 
+# PROYECTO INTEGRADOR
+
 En este repositorio iremos publicando los cambios referidos al Proyecto Integrador para la modalidad Web Full Stack Blend, cuyos colaboradores son:
--Maribel Claros
--Matias Chillo
--Josmary Pazo
--Analia Rossotti
+
+- Maribel Claros
+- Matias Chillo
+- Josmary Pazo
+- Analia Rossotti
 
 Elegimos como opción realizar el E-Market, y en nuestro caso en particular lo haremos sobre una tienda de Bijouterie (collares, aros, etc.).
 
@@ -19,5 +21,3 @@ git clone https://github.com/anyrossotti/PROYECTO_INTEGRADOR
 git pull origin master
 Importante:
 Los cambios realizados, deben ingresarse con un git commit -m "mis ajustes" y luego pull.
-
-
