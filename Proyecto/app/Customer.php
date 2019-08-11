@@ -9,9 +9,9 @@ class customer extends Model
     //Se definen cuáles son las columnas que se pueden escribir
     protected $fillable = ['fullName', 'user', 'birthdate', 'email', 'password', 'repassword', 'country', 'avatar'];
 
-    // Se aclara la relación
-    public function shoppingCart(){
-      return $this->hasMany("App\shopping_cart", "customer_id");
+    // Se aclara la relación (AGREGUE la s y cambie en nombre del modelo que estaba mal Mati)
+    public function shoppingCarts(){
+      return $this->hasMany("App\shoppingCart", "customer_id");
 
     }
 
