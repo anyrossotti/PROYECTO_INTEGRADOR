@@ -9,7 +9,7 @@ class shoppingCart extends Model
   //La clase se llama shopping_cart (AGREGUE Mati)
   protected $table = "shopping_carts";
   //Se define cuáles son las columnas que se pueden escribir
-  protected $fillable = ['purchase_amount'];
+  protected $fillable = ['purchase_amount','customer_id'];
 
   // Se aclara la relación con customer
   public function customer(){

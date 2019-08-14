@@ -4,10 +4,10 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class product extends Model
+class Product extends Model
 {
   //Se define cuáles son las columnas que se pueden escribir (AGREGUE IMAGE Mati)
-  protected $fillable = ['name','rating','description', 'price', 'stock', 'image'];
+  protected $fillable = ['name','rating','description', 'price', 'stock', 'image','category_id'];
 
     // Se aclara la relación con category
     public function category(){

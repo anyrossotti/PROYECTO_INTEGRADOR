@@ -4,15 +4,14 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class customer extends Model
+class Customer extends Model
 {
     //Se definen cuáles son las columnas que se pueden escribir
-    protected $fillable = ['fullName', 'user', 'birthdate', 'email', 'password', 'repassword', 'country', 'avatar'];
+    protected $fillable = ['fullName', 'user', 'birthdate', 'email', 'password', 'country', 'avatar'];
 
-    // Se aclara la relación (AGREGUE la s y cambie en nombre del modelo que estaba mal Mati)
+    // Se aclara la relación (AGREGUE las y cambie en nombre del modelo que estaba mal Mati)
     public function shoppingCarts(){
-      return $this->hasMany("App\shoppingCart", "customer_id");
-
-    }
+      return $this->hasMany(shoppingCart::class);
+  }
 
 }

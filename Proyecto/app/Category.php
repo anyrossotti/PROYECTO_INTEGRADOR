@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class category extends Model
+class Category extends Model
 {
     //Se definen cuáles son las columnas que se pueden escribir
     protected $fillable = ['name'];
