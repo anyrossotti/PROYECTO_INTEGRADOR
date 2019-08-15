@@ -1,0 +1,28 @@
+.navbar  {
+  width: 100%;
+  background-color: rgba(234, 250, 241, 0.43);
+  display: flex;
+  margin-top: 15px;
+}
+
+.nav-item {
+  margin-right: 10px;
+}
+
+.dropdown-menu {
+  background-color: rgba(234, 250, 241, 0.43);
+}
+
+.container-logo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo {
+  width: 25%;
+  display: flex;
+  padding: 15px;
+  border-radius: 50%;
+  background-color: rgba(234, 250, 241, 0.43);
+}
